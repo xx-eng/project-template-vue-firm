@@ -1,0 +1,187 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#app, #root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout.layout-basic {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// 数据列表 样式
+.table-alert {
+  margin-bottom: 16px;
+}
+
+// 数据列表 操作
+.table-operator {
+  margin-bottom: 18px;
+
+  button {
+    margin-right: 8px;
+  }
+}
+
+// 数据列表 搜索条件
+.table-page-search-wrapper {
+
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-bottom: 24px;
+      margin-right: 0;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      > .ant-form-item-label {
+        line-height: 32px;
+        padding-right: 8px;
+        width: auto;
+      }
+
+      .ant-form-item-control {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .table-page-search-submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//fixed antd card shadow
+.shadow {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  border-color: #eee;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.line {
+  white-space: pre-line
+}
+
+.editable {
+  /deep/ .ant-select-selection {
+    background-color: inherit;
+    border: 0;
+  }
+}
+
+.ant-layout-footer {
+  padding: 0;
+}
+
+//修正表格尺寸
+
+.ant-table-thead > tr > th {
+  padding: 10px 5px;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 8px 5px;
+}
+
+.ant-divider, .ant-divider-vertical {
+  margin: 0 4px;
+}
+
+//相关背景色
+.bg-success {
+  background-color: #dff0d8;
+}
+
+.bg-warning {
+  background-color: #fcf8e3;
+}
+
+.bg-danger {
+  background-color: #f2dede;
+}
+
+.bg-info {
+  background-color: #d9edf7;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.gray{
+  color: #C6C6C6;
+}
+
+.red{
+  color: red;
+}
+
+.full-width{
+  width: 100%;
+}
